@@ -10,8 +10,8 @@ Bob.setName("Bob");
 Charles.setSuperpower("Flying");
 Bob.setSuperpower("Strength");
 Troy.setSuperpower("Speed");
-System.out.println(Troy.toString());
-System.out.println(Bob.toString());
-System.out.println(Charles.toString());
+System.out.println(Troy);
+System.out.println(Bob);
+System.out.println(Charles);
 }
 }

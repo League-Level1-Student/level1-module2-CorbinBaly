@@ -11,7 +11,7 @@ public class TeaPartyStuff {
 
        @Test
        public void test() {
-               TeaParty teaParty = new TeaParty();
+               Teaparty teaParty = new Teaparty();
                String greeting = teaParty.welcome(null, false, false);
                assertEquals("Hello Ms. Austen", teaParty.welcome("Austen", true, false));
                assertEquals("Hello Mr. Orwell", teaParty.welcome("Orwell", false, false));

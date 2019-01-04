@@ -1,20 +1,24 @@
+import javax.swing.JOptionPane;
+
 public class Teaparty {
 	private String isWoman;
 	private String isKnighted;
 	private String name;
 
 	public String welcome(String name, boolean isWoman, boolean isKnighted) {
-		if (isKnighted == true && isWoman == false) {
-			return "Welcome Sir " + name;
-		} else if (isKnighted == false && isWoman == false) {
-			return "Welcome Mr." + name;
+		String greeting= "Hello ";
+		if (isKnighted && !isWoman) {
+			greeting +="Sir ";
+		} else if (!isKnighted && !isWoman) {
+			greeting +="Mr. ";
 		}
-		if (isKnighted == true && isWoman == true) {
-			return "Welcome Lady" + name;
+		if (isKnighted && isWoman) {
+			greeting += "Lady ";
 
-		} else if (isKnighted == false && isWoman == true) {
-			return "Welcome Ms." + name;
+		} else if (!isKnighted && isWoman) {
+		greeting += "Ms. ";
 		}
+		return greeting+= name;
 	}
 
 }

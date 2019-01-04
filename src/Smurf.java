@@ -48,7 +48,11 @@ public class Smurf {
 			return "Boy";
 		}
 	}
-
+	public String toString() {
+		String smurfVariable=name;
+		smurfVariable += " is a " + isGirlOrBoy() + " and their hat is " + getHatColor();
+		return smurfVariable;
+	}
 }
 
 

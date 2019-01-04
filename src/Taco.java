@@ -1,19 +1,19 @@
 
 
 public class Taco {
-private String Meat;
-private String Sauce;
+private String meat;
+private String sauce;
 public String getMeat() {
-	return Meat;
+	return meat;
 }
 
 public String getSauce() {
-return Sauce;
+return sauce;
 }
 public void setMeat(String meat){
-	Meat = meat;
+	this.meat = meat;
 }
 public void setSauce(String sauce) {
-	Sauce = sauce;
+	this.sauce = sauce;
 }
 }
